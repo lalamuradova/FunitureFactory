@@ -1,0 +1,54 @@
+﻿<Window x:Class="FunitureFactory.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FunitureFactory"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="600">
+    <Grid >
+        <Grid.Background>
+            <LinearGradientBrush>
+                <GradientStop Color="#CF8BF3" Offset="0"></GradientStop>
+                <GradientStop Color="WhiteSmoke" Offset="1"></GradientStop>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="2*"/>
+        </Grid.ColumnDefinitions>
+
+        <ComboBox Grid.Column="0" x:Name="combobox" Foreground="#41295a" Height="50" Margin="0,0,0,300">
+            <ComboBoxItem>Modern</ComboBoxItem>
+            <ComboBoxItem>Victorian</ComboBoxItem>
+            <ComboBoxItem>Avangard</ComboBoxItem>
+        </ComboBox>
+        <Grid Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0" Orientation="Horizontal">
+                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Chair</TextBlock>
+                <Image  Source="/image/ArtDecoChair1.jpg" Margin="30,0,0,0"  />
+
+            </StackPanel>
+            
+            <StackPanel Grid.Row="1" Orientation="Horizontal">
+                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Table</TextBlock>
+                <Image Source="/image/ArtDecoTable.jpg" Margin="30,0,0,0" />
+
+            </StackPanel>
+
+
+            <StackPanel Grid.Row="2" Orientation="Horizontal">
+                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Sofa</TextBlock>
+                <Image Source="/image/ArtDecoSofa.jpg" Margin="45,0,0,0"/>
+
+            </StackPanel>
+
+
+        </Grid>
+    </Grid>
+</Window>
