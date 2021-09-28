@@ -30,20 +30,20 @@
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
             <StackPanel Grid.Row="0" Orientation="Horizontal">
-                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Chair</TextBlock>
+                <TextBlock  Style="{StaticResource TxtBlock}">Chair</TextBlock>
                 <Image  Source="/image/ArtDecoChair1.jpg" Margin="30,0,0,0"  />
 
             </StackPanel>
             
             <StackPanel Grid.Row="1" Orientation="Horizontal">
-                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Table</TextBlock>
+                <TextBlock  Style="{StaticResource TxtBlock}" >Table</TextBlock>
                 <Image Source="/image/ArtDecoTable.jpg" Margin="30,0,0,0" />
 
             </StackPanel>
 
 
             <StackPanel Grid.Row="2" Orientation="Horizontal">
-                <TextBlock  Margin="20,60,0,0" Foreground="#41295a" FontSize="40" FontWeight="SemiBold" >Sofa</TextBlock>
+                <TextBlock  Style="{StaticResource TxtBlock}" >Sofa</TextBlock>
                 <Image Source="/image/ArtDecoSofa.jpg" Margin="45,0,0,0"/>
 
             </StackPanel>
